@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="./ayudas.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0/dist/aos.js"></script>
     <title>Clinica</title>
 </head>
 <body>
@@ -49,7 +51,7 @@
 <!-- Contenido del resto de la página aquí -->
 
 <main>
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-right">
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -73,7 +75,7 @@
             </a>
         </div>
     </div>
-        <div class="card">
+        <div class="card" data-aos="fade-right">
             <div class="card-body d-flex align-items-center">
                 <!-- Imagen a la izquierda en dispositivos medianos y mayores -->
                 <div class="col-md-6 order-md-1">
@@ -92,7 +94,7 @@
 <!-- Sección de Servicios -->
 <div class="container mt-5">
     <h2>Servicios</h2>
-    <div class="row">
+    <div class="row" data-aos="fade-up">
         <!-- Tarjetas de Servicios -->
         <div class="col-md-4 mb-4">
             <div class="card">
@@ -122,7 +124,7 @@
 </div>
 
 <!-- Sección de Médicos -->
-<div class="container mt-5">
+<div class="container mt-5" data-aos="fade-left">
     <h2>Médicos</h2>
     <div class="row">
         <!-- Tarjetas de Médicos -->
@@ -190,6 +192,10 @@
 <footer class="bg-light text-center py-4">
     <p>Derechos de Autor © 2023 Clínica Ocular. Todos los derechos reservados.</p>
 </footer>
+
+<script>
+    AOS.init();
+  </script>
 
 </body>
 </html>

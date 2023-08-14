@@ -20,4 +20,16 @@ function isSectionVisible(section) {
   return (rect.top <= window.innerHeight * 0.8); // Cambia el umbral según tu preferencia
 }
 
-AOS.init();
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollToTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollToTopBtn").style.display = "none";
+    }
+};
+
+// Función para volver arriba de la página
+function scrollToTop() {
+    document.body.scrollTop = 0; // Para navegadores Safari
+    document.documentElement.scrollTop = 0; // Para otros navegadores
+}

@@ -9,9 +9,44 @@ header{
     padding: 1rem 0;
 }
 
-img {
+header a img{
     border-radius: 10px;
 }
+
+/* Agrega estos estilos al final de tu archivo CSS */
+.header-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+}
+
+.presentation-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 80%; /* Ancho del cuadro de texto */
+    max-width: 600px; /* Ancho máximo del cuadro de texto */
+}
+
+.presentation-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.presentation-text p {
+    font-size: 16px;
+    color: #555;
+}
+
 
 .navbar-nav .nav-link {
     color: white;
@@ -30,7 +65,7 @@ img {
 
 #myCarousel {
     width: 100%;
-}
+} */
 
 .carousel-inner {
     border-radius: 0;
@@ -38,7 +73,6 @@ img {
 
 .carousel-item {
     text-align: center;
-    padding: 2rem;
     overflow: hidden;
 }
 
@@ -49,12 +83,16 @@ img {
     object-fit: cover;
 }
 
+.card-description {
+    margin-bottom: 20px; /* Ajusta el valor según tus preferencias */
+}
 
 /* Estilos para las tarjetas */
 .card {
     border: none;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Estilos para el formulario de contacto */
 form {
@@ -69,4 +107,29 @@ footer {
     background-color: #f9f9f9;
     color: #6C757D;
     padding: 1rem 0;
+}
+
+
+/* Estilos para el botón de subir */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#scrollToTopBtn img:hover {
+    width: 25px;
+    height: 25px;
+    transition: 0.3s;
+}
+
+#scrollToTopBtn img {
+    width: 20px;
+    height: 20px;
 }

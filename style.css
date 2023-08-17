@@ -1,8 +1,16 @@
+/*<-------------------------
+GENERAL
+---------------------------> */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*<-------------------------
+HEADER
+ ----------------------------> */
 
 header{
     background-color: #054d7a;
@@ -11,21 +19,9 @@ header{
 
 header a img{
     border-radius: 10px;
-    max-width: 300px;
+    width: 25vw;
 }
 
-/* Agrega estos estilos al final de tu archivo CSS */
-/* .header-img {
-    position: relative;
-    overflow: hidden;
-}
-
-.header-image img {
-    max-width: 2652px;
-    height: auto;
-} */
-
-/* Estilo para el menú desplegable */
 .collapse.navbar-collapse {
     transition: height 0.3s ease-in-out;
     overflow: hidden;
@@ -51,26 +47,12 @@ header a img{
     text-decoration:underline;
 }
 
- /* .presentation-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    width: 80%; /* Ancho del cuadro de texto  }*/
 
+/*<-------------------------
+ IMAGEN BIENVENIDA ----------------------------> */ 
 
-/* Agrega estos estilos a tu archivo CSS */
-
-/* Agrega estos estilos a tu archivo CSS */
-
-/* Estilo para la sección de bienvenida */
 #bienve {
-    background-color: #5091e6; /* Color celeste de fondo */
+    background-color: #5091e6;
     overflow: hidden;
     position: relative;
 }
@@ -79,8 +61,8 @@ header a img{
     width: 100%;
     height: auto;
     display: block;
-    opacity: 0.7; /* Opacidad de la imagen */
-    transition: opacity 0.3s ease-in-out; /* Transición de opacidad */
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .presentation-text {
@@ -92,38 +74,115 @@ header a img{
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    width: 80%; /* Ancho del cuadro de texto */
-    color: black; /* Color celeste para el texto */
+    width: 80%;
+    color: black;
 }
 
+/*<-------------------------
+MEDICOS
+----------------------------> */
 
+.card-body div img{
+    width: 50%;
+}
 
+.card-description {
+    margin-bottom: 20px; /* Ajusta el valor según tus preferencias */
+}
 
-/* .presentation-text h2 {
-    font-size: 24px;
+.card {
+    border: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*<-------------------------
+SERVICIOS
+----------------------------> */
+
+.specialties-header {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #054d7a;
+    color: #fff;
+}
+
+.specialties-header h2 {
+    font-size: 2rem;
+}
+
+.subgroups {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.subgroup {
+    width: 45%;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.subgroup img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.subgroup h3 {
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.presentation-text p {
-    font-size: 16px;
-    color: #555;
-} */
+.subgroup p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
 
-/* Consulta de medios para pantallas más pequeñas */
-@media only screen and (max-width: 768px) {
-    .presentation-text h2 {
-        font-size: 18px; /* Tamaño de fuente para pantallas pequeñas */
-    }
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
-    .presentation-text p {
-        font-size: 12px; /* Tamaño de fuente para pantallas pequeñas */
-    }
+.btn:hover {
+    background-color: #0056b3;
 }
 
 
+/*<-------------------------
+UBICACION
+----------------------------> */
+.container {
+    display: flex;
+    border-radius: 10px;
+    height: auto;
+}
+
+.container div{
+}
+
 #myCarousel {
+} 
+
+.carousel{
+    color: black;
+}
+
+div iframe{
     width: 100%;
-} */
+    height: 100%;
+}
 
 .carousel-inner {
     border-radius: 0;
@@ -135,28 +194,13 @@ header a img{
 }
 
 .carousel-item img {
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.card-body div img{
-    width: 50%;
-}
-
-.card-description {
-    margin-bottom: 20px; /* Ajusta el valor según tus preferencias */
-}
-
-/* Estilos para las tarjetas */
-.card {
-    border: none;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 
-/* Estilos para el formulario de contacto */
+/*<-------------------------
+CONTACTO
+----------------------------> */
+
 form {
     border: 1px solid #E9ECEF;
     padding: 1rem;
@@ -164,7 +208,10 @@ form {
     background-color: #f9f9f9;
 }
 
-/* Estilos para el pie de página */
+/*<-------------------------
+FOOTER
+----------------------------> */
+
 footer {
     background-color: #054d7a;
     color: #6C757D;
@@ -172,7 +219,10 @@ footer {
 }
 
 
-/* Estilos para el botón de subir */
+/*<-------------------------
+BOTON ARRIBA
+----------------------------> */
+
 #scrollToTopBtn {
     display: none;
     position: fixed;
@@ -196,4 +246,18 @@ footer {
 #scrollToTopBtn img {
     width: 90%;
     height: auto;
+}
+
+/*<-------------------------
+MEDIAS
+----------------------------> */
+
+@media only screen and (max-width: 768px) {
+    .presentation-text h2 {
+        font-size: 18px; 
+    }
+
+    .presentation-text p {
+        font-size: 12px;
+    }
 }

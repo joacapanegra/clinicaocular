@@ -33,3 +33,14 @@ function scrollToTop() {
     document.body.scrollTop = 0; // Para navegadores Safari
     document.documentElement.scrollTop = 0; // Para otros navegadores
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".btn");
+    buttons.forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            const link = this.getAttribute("href");
+            window.location.href = link;
+        });
+    });
+});

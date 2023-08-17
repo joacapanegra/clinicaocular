@@ -36,13 +36,13 @@
                     <a class="nav-link" href="#bienve">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
+                    <a class="nav-link" href="#especialidad">Especialidades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Médicos</a>
+                    <a class="nav-link" href="#ubicacion">Ubicacion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contactos">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -77,101 +77,95 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5">
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/descarga (11).jpg" alt="Imagen 1">
+    
+    <div class="card slide-in" data-aos="fade-right">
+        <div class="card-body d-flex align-items-center">
+                <!-- Imagen a la izquierda en dispositivos medianos y mayores -->
+                <div class="col-md-6 order-md-1">
+                    <img src="./img/doctor.png" alt="Foto de la persona" class="img-fluid">
                 </div>
-                <div class="carousel-item">
-                    <img src="img/descarga (11).jpg" alt="Imagen 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/descarga (11).jpg" alt="Imagen 3">
+                <!-- Descripción a la derecha en dispositivos medianos y mayores -->
+                <div class="col-md-6 order-md-2 my-auto py-2">
+                    <h5 class="card-title">Nombre de la persona</h5>
+                    <p class="card-text">Descripción de la persona. Puedes escribir aquí una breve biografía o información relevante sobre la persona.</p>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </a>
         </div>
     </div>
 </main>
 
-<!-- Sección de Servicios -->
-<div class="container mt-5">
-    <h2>Servicios</h2>
-    <div class="row" data-aos="fade-up">
-        <!-- Tarjetas de Servicios -->
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Servicio 1</h5>
-                    <p class="card-text">Descripción del servicio 1.</p>
+<div class="specialties-header" id="especialidad">
+    <h2>Especialidades</h2>
+</div>
+<section class="subgroups">
+    <div class="subgroup">
+        <img src="./img/optometria.jpg" alt="Subgrupo 1">
+        <h3>Optometría:</h3>
+        <p>La optometría es una rama de la medicina ocular que se centra en el cuidado de la salud visual...</p>
+        <a href="subgrupo1.html" class="btn btn-info">Más Info</a>
+    </div>
+    <div class="subgroup">
+        <img src="./img/oftalmologia.jpg" alt="Subgrupo 2">
+        <h3>Oftalmología:</h3>
+        <p>La oftalmología es la especialidad médica que se ocupa del diagnóstico...</p>
+        <a href="subgrupo2.html" class="btn btn-info">Más Info</a>
+    </div>
+    <div class="subgroup">
+        <img src="./img/glaucoma.jpeg" alt="Subgrupo 1">
+        <h3>Glaucoma:</h3>
+        <p>El glaucoma es un grupo de enfermedades oculares que afectan el nervio óptico y pueden llevar a la pérdida de la visión...</p>
+        <a href="subgrupo1.html" class="btn btn-info">Más Info</a>
+    </div>
+    <div class="subgroup">
+        <img src="./img/dmre.jpg" alt="Subgrupo 1">
+        <h3>Degeneración Macular Relacionada con la Edad (DMRE):</h3>
+        <p>La DMRE es una afección ocular que afecta la mácula, la parte de la retina responsable de la visión central y aguda...</p>
+        <a href="subgrupo1.html" class="btn btn-info">Más Info</a>
+    </div>
+</section>
+
+<div class="specialties-header" id="ubicacion">
+    <h2>Ubicacion</h2>
+</div>
+
+
+<div class="container mt-5 bg-light"  data-aos="fade-left">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/clinica (1).jpg" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/clinica (2).jpg" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/clinica (3).jpg" alt="Imagen 3">
+                    </div>
                 </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Servicio 2</h5>
-                    <p class="card-text">Descripción del servicio 2.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Servicio 3</h5>
-                    <p class="card-text">Descripción del servicio 3.</p>
-                </div>
-            </div>
+        <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13587.382750085053!2d-60.7160596!3d-31.6380752!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9d70aafeee7%3A0xc0d4760c8c6071b5!2sCentro%20Oftalmologico%20Dres.%20Molinas!5e0!3m2!1ses-419!2sar!4v1692194724433!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </div>
 
-<!-- Sección de Médicos -->
-<div class="container mt-5" data-aos="fade-left">
-    <h2>Médicos</h2>
-    <div class="row">
-        <!-- Tarjetas de Médicos -->
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="img/doctor1.jpg" class="card-img-top" alt="Doctor 1">
-                <div class="card-body">
-                    <h5 class="card-title">Dr. Juan Pérez</h5>
-                    <p class="card-text">Especialidad: Oftalmología</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="img/doctor2.jpg" class="card-img-top" alt="Doctor 2">
-                <div class="card-body">
-                    <h5 class="card-title">Dra. María Gómez</h5>
-                    <p class="card-text">Especialidad: Optometría</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="img/doctor3.jpg" class="card-img-top" alt="Doctor 3">
-                <div class="card-body">
-                    <h5 class="card-title">Dr. Carlos Rodríguez</h5>
-                    <p class="card-text">Especialidad: Cirugía Ocular</p>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="specialties-header" id="contactos">
+    <h2>Contactos</h2>
 </div>
 
 <!-- Sección de Contacto -->
 <div class="container mt-5">
-    <h2>Contacto</h2>
     <div class="row">
         <div class="col-md-6">
             <p>Dirección: Calle Principal #123</p>
@@ -179,7 +173,6 @@
             <p>Correo Electrónico: info@clinicocular.com</p>
         </div>
         <div class="col-md-6">
-            <!-- Formulario de Contacto -->
             <form>
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>

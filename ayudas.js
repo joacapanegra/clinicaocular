@@ -44,3 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Iniciar el carrusel de la clínica
+$('#clinicCarousel').carousel();

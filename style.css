@@ -51,49 +51,106 @@ header a img{
 /*<-------------------------
  IMAGEN BIENVENIDA ----------------------------> */ 
 
-#bienve {
-    background-color: #5091e6;
-    overflow: hidden;
+ #bienve {
     position: relative;
+    overflow: hidden;
 }
 
 #bienve img {
     width: 100%;
     height: auto;
-    display: block;
-    opacity: 0.7;
-    transition: opacity 0.3s ease-in-out;
 }
 
 .presentation-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    width: 80%;
-    color: black;
 }
+
+.presentation-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.presentation-text p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.presentation-text a.btn {
+    font-size: 1rem;
+    padding: 10px 25px;
+}
+
+@media (min-width: 768px) {
+    .presentation-text h2 {
+        font-size: 2rem;
+    }
+
+    .presentation-text p {
+        font-size: 1.25rem;
+    }
+
+    .presentation-text a.btn {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+    }
+}
+
 
 /*<-------------------------
 MEDICOS
 ----------------------------> */
 
-.card-body div img{
+/* .card-body div img{
     width: 50%;
 }
 
 .card-description {
-    margin-bottom: 20px; /* Ajusta el valor según tus preferencias */
+    margin-bottom: 20px;
 }
 
 .card {
     border: none;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.card-body div img {
+    width: 100%;
+    max-width: 300px; /* Ajusta el tamaño de la imagen */
+    border-radius: 10px;
 }
+
+.card {
+    border: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-description {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    font-size: 1rem;
+    padding: 10px 25px;
+}
+
 
 /*<-------------------------
 SERVICIOS
@@ -163,38 +220,52 @@ SERVICIOS
 /*<-------------------------
 UBICACION
 ----------------------------> */
-.container {
-    display: flex;
+
+/* Estilo para la sección Carrusel y Google Maps */
+.gallery-map {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+.gallery-map h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.gallery-map .carousel-inner {
     border-radius: 10px;
+    height: 300px; /* Altura fija para igualar el iframe */
+}
+
+.gallery-map iframe {
+    border-radius: 10px;
+    height: 91%;
+    width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Asegurar que el carrusel se ajuste al tamaño de las imágenes */
+.carousel-inner {
+    width: 100%;
+    max-height: 100%;
+}
+
+/* Asegurar que las imágenes del carrusel se ajusten correctamente */
+.carousel-inner img {
+    width: 100%;
     height: auto;
 }
 
-.container div{
-}
-
-#myCarousel {
-} 
-
-.carousel{
-    color: black;
-}
-
-div iframe{
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-inner {
-    border-radius: 0;
-}
-
-.carousel-item {
-    text-align: center;
-    overflow: hidden;
-}
-
-.carousel-item img {
-}
 
 
 /*<-------------------------
@@ -212,11 +283,30 @@ form {
 FOOTER
 ----------------------------> */
 
-footer {
-    background-color: #054d7a;
-    color: #6C757D;
-    padding: 1rem 0;
+.footer {
+    background-color: #054d7a;    padding: 20px 0;
+    text-align: center;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+
 
 
 /*<-------------------------

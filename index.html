@@ -53,7 +53,7 @@
 <!-- Contenido del resto de la página aquí -->
 
 <div class="container-fluid p-0 position-relative" id="bienve">
-    <img src="./img/boy-4948961_1920.jpg" alt="Imagen de presentación" class="img-fluid">
+    <video src="./videos/Pau_ulls.mp4" alt="Video de Bienvenida" autoplay loop muted>No se puedo repoducir el video</video>
     <div class="presentation-text position-absolute top-50 start-50 translate-middle text-center bg-dark text-light p-4 rounded shadow">
         <h2 class="fs-4 fs-md-3 fs-lg-2">Bienvenidos a Clínica Ocular</h2>
         <p class="fs-6 fs-md-5 fs-lg-4">Somos un equipo dedicado a cuidar de tu salud visual. Nuestros médicos altamente calificados y servicios de vanguardia están aquí para atenderte.</p>
@@ -92,36 +92,6 @@
     </div>
 </main>
 
-
-
-<!-- <main>
-    <div class="card slide-in" data-aos="fade-right">
-        <div class="card-body d-flex align-items-center">
-                <div class="col-md-6 order-md-1">
-                    <img src="./img/doctor.png" alt="Foto de la persona" class="img-fluid">
-                </div>
-                <div class="col-md-6 order-md-2 my-auto py-2">
-                    <h5 class="card-title">Nombre de la persona</h5>
-                    <p class="card-text">Descripción de la persona. Puedes escribir aquí una breve biografía o información relevante sobre la persona.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="card slide-in" data-aos="fade-right">
-        <div class="card-body d-flex align-items-center">
-                <div class="col-md-6 order-md-1">
-                    <img src="./img/doctor.png" alt="Foto de la persona" class="img-fluid">
-                </div>
-                <div class="col-md-6 order-md-2 my-auto py-2">
-                    <h5 class="card-title">Nombre de la persona</h5>
-                    <p class="card-text">Descripción de la persona. Puedes escribir aquí una breve biografía o información relevante sobre la persona.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</main> -->
-
 <div class="specialties-header" id="especialidad">
     <h2>Especialidades</h2>
 </div>
@@ -130,25 +100,25 @@
         <img src="./img/optometria.jpg" alt="Subgrupo 1">
         <h3>Optometría:</h3>
         <p>La optometría es una rama de la medicina ocular que se centra en el cuidado de la salud visual...</p>
-        <a href="subgrupo1.html" class="btn btn-info">Más Info</a>
+        <a href="#" class="btn btn-info mas-info">Más Info</a>
     </div>
     <div class="subgroup">
         <img src="./img/oftalmologia.jpg" alt="Subgrupo 2">
         <h3>Oftalmología:</h3>
         <p>La oftalmología es la especialidad médica que se ocupa del diagnóstico...</p>
-        <a href="subgrupo2.html" class="btn btn-info">Más Info</a>
+        <a href="#" class="btn btn-info mas-info">Más Info</a>
     </div>
     <div class="subgroup">
-        <img src="./img/glaucoma.jpeg" alt="Subgrupo 1">
+        <img src="./img/glaucoma.jpeg" alt="Subgrupo 3">
         <h3>Glaucoma:</h3>
         <p>El glaucoma es un grupo de enfermedades oculares que afectan el nervio óptico y pueden llevar a la pérdida de la visión...</p>
-        <a href="subgrupo1.html" class="btn btn-info">Más Info</a>
+        <a href="#" class="btn btn-info mas-info">Más Info</a>
     </div>
     <div class="subgroup">
-        <img src="./img/dmre.jpg" alt="Subgrupo 1">
+        <img src="./img/dmre.jpg" alt="Subgrupo 4">
         <h3>Degeneración Macular Relacionada con la Edad (DMRE):</h3>
         <p>La DMRE es una afección ocular que afecta la mácula, la parte de la retina responsable de la visión central y aguda...</p>
-        <a href="subgrupo1.html" class="btn btn-info">Más Info</a>
+        <a href="#" class="btn btn-info mas-info">Más Info</a>
     </div>
 </section>
 
@@ -196,33 +166,47 @@
     <h2>Contactos</h2>
 </div>
 
-<!-- Sección de Contacto -->
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-6">
-            <p>Dirección: Calle Principal #123</p>
-            <p>Teléfono: (123) 456-7890</p>
-            <p>Correo Electrónico: info@clinicocular.com</p>
-        </div>
-        <div class="col-md-6">
-            <form>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" required>
+<section class="contact-section">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-container">
+                    <div class="notebook">
+                        <h3>Datos de Contacto</h3>
+                        <ul>
+                            <li>Dirección: Calle Principal #123</li>
+                            <li>Teléfono: (123) 456-7890</li>
+                            <li>Correo Electrónico: info@clinicocular.com</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="correo" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="correo" required>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <h3>¡Contáctanos!</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+            </div>
         </div>
     </div>
-</div>
+</section>
+
 
 <footer class="footer">
     <div class="social-icons">

@@ -51,12 +51,12 @@ header a img{
 /*<-------------------------
  IMAGEN BIENVENIDA ----------------------------> */ 
 
- #bienve {
+#bienve {
     position: relative;
     overflow: hidden;
 }
 
-#bienve img {
+#bienve video {
     width: 100%;
     height: auto;
 }
@@ -99,19 +99,6 @@ header a img{
 /*<-------------------------
 MEDICOS
 ----------------------------> */
-
-/* .card-body div img{
-    width: 50%;
-}
-
-.card-description {
-    margin-bottom: 20px;
-}
-
-.card {
-    border: none;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-} */
 
 .card-body div img {
     width: 100%;
@@ -272,12 +259,35 @@ UBICACION
 CONTACTO
 ----------------------------> */
 
-form {
-    border: 1px solid #E9ECEF;
-    padding: 1rem;
-    border-radius: 5px;
+.contact-section {
+    padding: 20px 0;
     background-color: #f9f9f9;
+    margin: 10px;
 }
+
+.contact-container {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.notebook {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+}
+
+
 
 /*<-------------------------
 FOOTER

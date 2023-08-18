@@ -47,3 +47,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Iniciar el carrusel de la clínica
 $('#clinicCarousel').carousel();
+
+document.addEventListener("DOMContentLoaded", function () {
+    const masInfoButtons = document.querySelectorAll(".mas-info");
+    const descripcionesCompletas = document.querySelectorAll(".descripcion-completa");
+
+    masInfoButtons.forEach(function (masInfoButton, index) {
+        masInfoButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            descripcionesCompletas[index].classList.toggle("visible");
+        });
+    });
+});
+
+    const formHeight = document.querySelector('.contact-form').offsetHeight;
+    const notebook = document.querySelector('.notebook');
+    notebook.style.height = formHeight + 'px';

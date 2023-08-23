@@ -56,44 +56,88 @@ header a img{
     overflow: hidden;
 }
 
-#bienve video {
+#bienve img {
     width: 100%;
     height: auto;
 }
 
+/* Estilos para el cuadrado flotante */
 .presentation-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    max-width: 70%; /* Ajusta el ancho máximo según tu preferencia */
 }
 
+/* Estilos para el texto dentro del cuadrado */
 .presentation-text h2 {
     font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.presentation-text p {
-    font-size: 1.1rem;
     margin-bottom: 10px;
 }
 
-.presentation-text a.btn {
+.presentation-text p {
     font-size: 1rem;
-    padding: 10px 25px;
+    margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
-    .presentation-text h2 {
-        font-size: 2rem;
-    }
-
-    .presentation-text p {
-        font-size: 1.25rem;
-    }
-
-    .presentation-text a.btn {
-        font-size: 1.2rem;
-        padding: 12px 30px;
-    }
+/* Estilos para el botón debajo del cuadrado flotante */
+.presentation-text .btn {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: opacity 0.3s, transform 0.3s, width 0.3s;
 }
+
+.presentation-text .btn:hover {
+    background-color: #02881f;
+    display: inline;
+    opacity: 1;
+    transform: scale(1.1);
+    width: 50%;
+}
+
+/* Estilos para el enlace de WhatsApp */
+#whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+#whatsapp-icon {
+    margin-left: 45%;
+    display: none;
+    transition: opacity 0.3s, transform 0.3s, width 0.3s;
+    transform-origin: center center;
+    opacity: 0;
+    width: 10%;
+}
+
+/* Estilos para el enlace cuando se pasa el cursor sobre él */
+#whatsapp-link:hover #whatsapp-text {
+    display: none;
+}
+
+#whatsapp-link:hover #whatsapp-icon {
+    display: inline;
+    margin-left: 42%;
+    opacity: 1;
+    width: 15%;
+    transform: scale(1.1);
+}
+
 
 
 /*<-------------------------
@@ -316,8 +360,33 @@ FOOTER
     color: #007bff;
 }
 
+/*<-------------------------
+ESPECIALIDADES
+----------------------------> */
+.specialty-description {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
 
+#img-espe{
+    border-radius: 5px;
+}
 
+.specialty-description h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    font-family: 'Noto Serif', serif;
+}
+
+.specialty-description p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-family: 'Noto Serif Display', serif;
+}
 
 /*<-------------------------
 BOTON ARRIBA
@@ -353,11 +422,61 @@ MEDIAS
 ----------------------------> */
 
 @media only screen and (max-width: 768px) {
+    header a img{
+        width: 35vw;
+    }
+    
+    .presentation-text{
+        padding: 10px;
+    }
+
     .presentation-text h2 {
-        font-size: 18px; 
+        font-size: 18px;
     }
 
     .presentation-text p {
         font-size: 12px;
     }
+
+    .presentation-text a.btn {
+        font-size: 12px;
+        padding: 12px 20px;
+    }
+
+}
+
+@media only screen and (max-width: 455px) {
+    header a img{
+        width: 45vw;
+    }
+
+    .presentation-text h2 {
+        font-size: 16px; 
+    }
+
+    .presentation-text p {
+        font-size: 10px;
+    }
+
+    .presentation-text a.btn {
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    .presentation-text h2 {
+        font-size: 14px; 
+    }
+
+    .presentation-text p {
+        font-size: 8px;
+    }
+
+    .presentation-text a.btn {
+        font-size: 8px;
+        padding: 8px 16px;
+    }
+
 }

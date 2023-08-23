@@ -63,3 +63,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const formHeight = document.querySelector('.contact-form').offsetHeight;
     const notebook = document.querySelector('.notebook');
     notebook.style.height = formHeight + 'px';
+
+    // Agrega este fragmento a tu archivo JavaScript existente
+document.addEventListener("DOMContentLoaded", function () {
+    const whatsappLink = document.getElementById("whatsapp-link");
+    const whatsappText = document.getElementById("whatsapp-text");
+    const whatsappIcon = document.getElementById("whatsapp-icon");
+
+    whatsappLink.addEventListener("mouseenter", function () {
+        whatsappText.textContent = "¡Contáctanos en WhatsApp!";
+        whatsappIcon.style.color = "#25d366"; // Color de WhatsApp verde
+    });
+
+    whatsappLink.addEventListener("mouseleave", function () {
+        whatsappText.textContent = "Escribinos al whatsapp";
+        whatsappIcon.style.color = ""; // Restaurar el color original del ícono
+    });
+});

@@ -80,3 +80,4 @@ document.addEventListener("DOMContentLoaded", function () {
         whatsappIcon.style.color = ""; // Restaurar el color original del ícono
     });
 });
+

@@ -33,7 +33,7 @@ header a img{
 
 .navbar-nav .nav-link {
     color: white;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-right: 1.5rem;
     transition: color 0.3s ease-in-out;
@@ -42,7 +42,7 @@ header a img{
 
 .navbar-nav .nav-link:hover {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.7rem;
     transition: 0.3s;
     text-decoration:underline;
 }
@@ -338,11 +338,12 @@ FOOTER
 ----------------------------> */
 
 .footer {
-    background-color: #054d7a;    padding: 20px 0;
+    background-color: #054d7a;
     text-align: center;
 }
 
 .social-icons {
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,6 +359,15 @@ FOOTER
 
 .social-icon:hover {
     color: #007bff;
+}
+
+h6{
+    text-align: end;
+    font-size: 14px;
+    background-color: #333;
+    color: #bbbbbb;
+    padding: 0;
+    margin: 0;
 }
 
 /*<-------------------------
@@ -480,3 +490,61 @@ MEDIAS
     }
 
 }
+
+/* Tu CSS existente */
+.faq-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.faq-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.faq-toggle {
+    display: none;
+}
+
+.question {
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-toggle:checked + .question {
+    background-color: #f0f0f0;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px;
+    font-size: 1rem;
+    color: #555;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    transition: max-height 0.5s ease;
+}
+
+.faq-toggle:checked + .question + .answer {
+    max-height: 1000px; /* Valor suficientemente alto para mostrar todo el contenido */
+}
+

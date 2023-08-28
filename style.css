@@ -489,6 +489,10 @@ MEDIAS
         padding: 8px 16px;
     }
 
+    .question{
+        font-size: 0.7rem;
+    }
+
 }
 
 /* Tu CSS existente */
@@ -518,7 +522,7 @@ MEDIAS
 }
 
 .question {
-    font-size: 1.2rem;
+    font-size: 90%;
     cursor: pointer;
     display: block;
     padding: 10px;

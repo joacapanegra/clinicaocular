@@ -262,6 +262,7 @@ UBICACION
 .gallery-map h2 {
     font-size: 2rem;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .gallery-map .carousel-inner {
@@ -271,7 +272,7 @@ UBICACION
 
 .gallery-map iframe {
     border-radius: 10px;
-    height: 91%;
+    height: 89%;
     width: 100%;
 }
 

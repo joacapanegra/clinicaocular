@@ -47,6 +47,10 @@
                     <a class="nav-link" href="#pr">Preguntas</a>
                 </li>
             </ul>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar médicos, especialidades, ubicación, contactos o preguntas frecuentes">
+                <div id="suggestions"></div>
+            </div>
         </div>
     </div>
 </header>
@@ -68,7 +72,7 @@
 
 <main>
     <div class="card slide-in" data-aos="fade-right">
-        <div class="card-body d-flex align-items-center">
+        <div class="card-body d-flex align-items-center searchable">
             <div class="col-md-6 order-md-1">
                 <img src="./img/doctor.png" alt="Foto de la persona" class="img-fluid">
             </div>
@@ -99,7 +103,7 @@
 <div class="specialties-header" id="especialidad">
     <h2>Especialidades</h2>
 </div>
-<section class="subgroups">
+<section class="subgroups searchable">
     <div class="subgroup">
         <img src="./img/optometria.jpg" alt="Subgrupo 1">
         <h3>Optometría:</h3>
@@ -259,15 +263,11 @@
 </div>
 </footer>
 
-
-
-
-
-
-
 <button id="scrollToTopBtn" title="Volver arriba">
     <a href="#arriba"><img src="./img/arrow-25859_1920.png" alt="Flecha arriba">
 </button></a>
+
+<script src="./ayudas.js"></script>
 
 </body>
 </html>

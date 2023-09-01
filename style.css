@@ -453,6 +453,11 @@ MEDIAS
         padding: 12px 20px;
     }
 
+    .social-icons-container {
+        position: static;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 @media only screen and (max-width: 455px) {
@@ -565,26 +570,66 @@ label img{
 .doctor-card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.doctor-card div h2{
+    text-align: center;
+}
+
+/* Estilo de imagen brillante */
 .doctor-card img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-right: 20px;
+    border: 3px solid #f2f2f2;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
-.info h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+/* Estilo de imagen en hover */
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.info p {
-    font-size: 1rem;
-    margin: 5px 0;
+.doctor-card:hover img {
+    border-color: #36a0fc;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para la información del médico */
+.doctor-card .info {
+    text-align: left;
+    flex: 1;
+}
+
+/* Estilo para los íconos de redes sociales en la versión vertical */
+.social-icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Estilo para cada ícono de red social */
+.social-icon-a{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.social-icon-a:hover{
+    border-radius: 10px;
 }

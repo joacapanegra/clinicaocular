@@ -321,6 +321,11 @@ CONTACTO
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     width: 100%;
+    margin-bottom: 10px;
+}
+
+.notebook h3{
+    text-align: center;
 }
 
 .contact-form {
@@ -329,176 +334,19 @@ CONTACTO
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     width: 100%;
-}
-
-
-
-/*<-------------------------
-FOOTER
-----------------------------> */
-
-.footer {
-    background-color: #054d7a;
-    text-align: center;
-}
-
-.social-icons {
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.social-icon {
-    font-size: 24px;
-    color: #333;
-    transition: color 0.3s;
-}
-
-.social-icon:hover {
-    color: #007bff;
-}
-
-h6{
-    text-align: end;
-    font-size: 14px;
-    background-color: #333;
-    color: #bbbbbb;
-    padding: 0;
-    margin: 0;
-}
-
-/*<-------------------------
-ESPECIALIDADES
-----------------------------> */
-.specialty-description {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-#img-espe{
-    border-radius: 5px;
-}
-
-.specialty-description h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    text-decoration: underline;
-    font-family: 'Noto Serif', serif;
-}
-
-.specialty-description p {
-    font-size: 1.1rem;
-    line-height: 1.5;
     margin-bottom: 10px;
-    font-family: 'Noto Serif Display', serif;
 }
+
+.contact-form h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 
 /*<-------------------------
-BOTON ARRIBA
+PREGUNTAS FRECUENTES
 ----------------------------> */
 
-#scrollToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    background-color: gray;
-    height: 6%;
-    width: 3%;
-}
-
-#scrollToTopBtn img:hover {
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-}
-
-#scrollToTopBtn img {
-    width: 90%;
-    height: auto;
-}
-
-/*<-------------------------
-MEDIAS
-----------------------------> */
-
-@media only screen and (max-width: 768px) {
-    header a img{
-        width: 35vw;
-    }
-    
-    .presentation-text{
-        padding: 10px;
-    }
-
-    .presentation-text h2 {
-        font-size: 18px;
-    }
-
-    .presentation-text p {
-        font-size: 12px;
-    }
-
-    .presentation-text a.btn {
-        font-size: 12px;
-        padding: 12px 20px;
-    }
-
-    .social-icons-container {
-        position: static;
-        flex-direction: row;
-        align-items: center;
-    }
-}
-
-@media only screen and (max-width: 455px) {
-    header a img{
-        width: 45vw;
-    }
-
-    .presentation-text h2 {
-        font-size: 16px; 
-    }
-
-    .presentation-text p {
-        font-size: 10px;
-    }
-
-    .presentation-text a.btn {
-        font-size: 10px;
-        padding: 10px 20px;
-    }
-
-}
-
-@media only screen and (max-width: 380px) {
-    .presentation-text h2 {
-        font-size: 14px; 
-    }
-
-    .presentation-text p {
-        font-size: 8px;
-    }
-
-    .presentation-text a.btn {
-        font-size: 8px;
-        padding: 8px 16px;
-    }
-
-    .question{
-        font-size: 0.7rem;
-    }
-
-}
 
 /* Tu CSS existente */
 .faq-section {
@@ -564,8 +412,78 @@ label img{
 }
 
 .faq-toggle:checked + .question + .answer {
-    max-height: 1000px; /* Valor suficientemente alto para mostrar todo el contenido */
+    max-height: 1000px;
 }
+
+/*<-------------------------
+FOOTER
+----------------------------> */
+
+.footer {
+    background-color: #054d7a;
+    text-align: center;
+}
+
+.social-icons {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+h6{
+    text-align: end;
+    font-size: 14px;
+    background-color: #333;
+    color: #bbbbbb;
+    padding: 0;
+    margin: 0;
+}
+
+/*<-------------------------
+BOTON ARRIBA
+----------------------------> */
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: gray;
+    height: 6%;
+    width: 3%;
+}
+
+#scrollToTopBtn img:hover {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#scrollToTopBtn img {
+    width: 90%;
+    height: auto;
+}
+
+/*<-------------------------
+HTML-MEDICOS
+----------------------------> */
 
 .doctor-card {
     background-color: #fff;
@@ -633,3 +551,130 @@ label img{
 .social-icon-a:hover{
     border-radius: 10px;
 }
+
+
+/*<-------------------------
+HTML-ESPECIALIDADES
+----------------------------> */
+.specialty-description {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#img-espe{
+    border-radius: 5px;
+}
+
+.specialty-description h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    font-family: 'Noto Serif', serif;
+}
+
+.specialty-description p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-family: 'Noto Serif Display', serif;
+}
+
+
+
+/*<-------------------------
+MEDIAS
+----------------------------> */
+
+@media only screen and (max-width: 768px) {
+    header a img{
+        width: 35vw;
+    }
+    
+    .presentation-text{
+        padding: 10px;
+    }
+
+    .presentation-text h2 {
+        font-size: 18px;
+    }
+
+    .presentation-text p {
+        font-size: 12px;
+    }
+
+    .presentation-text a.btn {
+        font-size: 12px;
+        padding: 12px 20px;
+    }
+
+    .social-icons-container {
+        position: static;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .doctor-card {
+        flex-direction: column; /* Cambia a una disposición vertical */
+        text-align: center;
+    }
+
+    .doctor-card img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .social-icons-container {
+        flex-direction: row; /* Cambia a una disposición horizontal */
+        padding: 0;
+        border: none;
+    }
+
+    .social-icon {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    header a img{
+        width: 45vw;
+    }
+
+    .presentation-text h2 {
+        font-size: 16px; 
+    }
+
+    .presentation-text p {
+        font-size: 10px;
+    }
+
+    .presentation-text a.btn {
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    .presentation-text h2 {
+        font-size: 14px; 
+    }
+
+    .presentation-text p {
+        font-size: 8px;
+    }
+
+    .presentation-text a.btn {
+        font-size: 8px;
+        padding: 8px 16px;
+    }
+
+    .question{
+        font-size: 0.7rem;
+    }
+
+}
+
+
+

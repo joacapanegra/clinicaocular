@@ -80,39 +80,3 @@ document.addEventListener("DOMContentLoaded", function () {
         whatsappIcon.style.color = ""; // Restaurar el color original del ícono
     });
 });
-
-
-function search() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById('searchInput');
-    filter = input.value.toUpperCase();
-    suggestions = document.getElementById('suggestions');
-    li = suggestions.getElementsByTagName('li');
-    
-    // Ocultar sugerencias si el campo de búsqueda está vacío
-    if (filter === '') {
-        suggestions.style.display = 'none';
-        return;
-    }
-
-    suggestions.style.display = 'block';
-    suggestions.innerHTML = '';
-
-    // Recorrer todos los elementos de la lista y mostrar los que coinciden con la consulta de búsqueda
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName('a')[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = '';
-            var suggestion = document.createElement('a');
-            suggestion.href = a.href;
-            suggestion.textContent = a.textContent;
-            suggestions.appendChild(suggestion);
-        } else {
-            li[i].style.display = 'none';
-        }
-    }
-}
-
-// Evento de escucha para el campo de búsqueda
-document.getElementById('searchInput').addEventListener('input', search);

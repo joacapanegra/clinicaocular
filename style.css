@@ -2,251 +2,251 @@
 GENERAL
 ---------------------------> */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*<-------------------------
 HEADER
  ----------------------------> */
 
-header{
-    background-color: #054d7a;
-    padding: 1rem 0;
+header {
+  background-color: #054d7a;
+  padding: 1rem 0;
 }
 
-header a img{
-    border-radius: 10px;
-    width: 25vw;
+header a img {
+  border-radius: 10px;
+  width: 25vw;
 }
 
 .collapse.navbar-collapse {
-    transition: height 0.3s ease-in-out;
-    overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .collapse.navbar-collapse.show {
-    height: auto;
+  height: auto;
 }
 
 .navbar-nav .nav-link {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-right: 1.5rem;
-    transition: color 0.3s ease-in-out;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1.5rem;
+  transition: color 0.3s ease-in-out;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .navbar-nav .nav-link:hover {
-    text-decoration: none;
-    font-size: 1.7rem;
-    transition: 0.3s;
-    text-decoration:underline;
+  text-decoration: none;
+  font-size: 1.7rem;
+  transition: 0.3s;
+  text-decoration: underline;
 }
 
-
 /*<-------------------------
- IMAGEN BIENVENIDA ----------------------------> */ 
+ IMAGEN BIENVENIDA ----------------------------> */
 
 #bienve {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 #bienve img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Estilos para el cuadrado flotante */
 .presentation-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    color: #fff;
-    text-align: center;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-    max-width: 70%; /* Ajusta el ancho máximo según tu preferencia */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  max-width: 70%; /* Ajusta el ancho máximo según tu preferencia */
 }
 
 /* Estilos para el texto dentro del cuadrado */
 .presentation-text h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .presentation-text p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 /* Estilos para el botón debajo del cuadrado flotante */
 .presentation-text .btn {
-    display: block;
-    margin: 10px auto 0;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: opacity 0.3s, transform 0.3s, width 0.3s;
+  display: block;
+  margin: 10px auto 0;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: opacity 0.3s, transform 0.3s, width 0.3s;
 }
 
 .presentation-text .btn:hover {
-    background-color: #02881f;
-    display: inline;
-    opacity: 1;
-    transform: scale(1.1);
-    width: 50%;
+  background-color: #02881f;
+  display: inline;
+  opacity: 1;
+  transform: scale(1.1);
+  width: 50%;
 }
 
 /* Estilos para el enlace de WhatsApp */
 #whatsapp-link {
-    display: inline-flex;
-    align-items: center;
-    position: relative;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
 }
 
 #whatsapp-icon {
-    margin-left: 45%;
-    display: none;
-    transition: opacity 0.3s, transform 0.3s, width 0.3s;
-    transform-origin: center center;
-    opacity: 0;
-    width: 10%;
+  margin-left: 45%;
+  display: none;
+  transition: opacity 0.3s, transform 0.3s, width 0.3s;
+  transform-origin: center center;
+  opacity: 0;
+  width: 10%;
 }
 
 /* Estilos para el enlace cuando se pasa el cursor sobre él */
 #whatsapp-link:hover #whatsapp-text {
-    display: none;
+  display: none;
 }
 
 #whatsapp-link:hover #whatsapp-icon {
-    display: inline;
-    margin-left: 42%;
-    opacity: 1;
-    width: 15%;
-    transform: scale(1.1);
+  display: inline;
+  margin-left: 42%;
+  opacity: 1;
+  width: 15%;
+  transform: scale(1.1);
 }
-
-
 
 /*<-------------------------
 MEDICOS
 ----------------------------> */
 
 .card-body div img {
-    width: 100%;
-    max-width: 300px; /* Ajusta el tamaño de la imagen */
-    border-radius: 10px;
+  width: 100%;
+  max-width: 300px; /* Ajusta el tamaño de la imagen */
+  border-radius: 10px;
 }
 
 .card {
-    border: none;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .card-description {
-    font-size: 1.1rem;
-    color: #6c757d;
+  font-size: 1.1rem;
+  color: #6c757d;
 }
 
 .card-text {
-    font-size: 1rem;
-    line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .btn-primary {
-    font-size: 1rem;
-    padding: 10px 25px;
+  font-size: 1rem;
+  padding: 10px 25px;
 }
-
 
 /*<-------------------------
 SERVICIOS
 ----------------------------> */
 
 .specialties-header {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px 0;
-    background-color: #054d7a;
-    color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #054d7a;
+  color: #fff;
 }
 
 .specialties-header h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .subgroups {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Cambiamos space-around a space-between */
+  margin: 50px;
 }
 
 .subgroup {
-    width: 45%;
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
+  width: 48%; /* Modificamos el ancho para dejar espacio entre los cuadros */
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  display: flex; /* Usamos flex para alinear verticalmente los contenidos */
+  flex-direction: column; /* Alineamos el contenido de arriba hacia abajo */
+  align-items: center; /* Centramos horizontalmente */
 }
 
 .subgroup img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .subgroup h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .subgroup p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .btn {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: auto; /* Mover el botón al fondo */
 }
 
 .btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
-
 
 /*<-------------------------
 UBICACION
@@ -254,166 +254,162 @@ UBICACION
 
 /* Estilo para la sección Carrusel y Google Maps */
 .gallery-map {
-    padding: 80px 0;
-    background-color: #f9f9f9;
-    text-align: center; /* Centrar el contenido horizontalmente */
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  text-align: center; /* Centrar el contenido horizontalmente */
 }
 
 .gallery-map h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    margin-top: 20px;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .gallery-map .carousel-inner {
-    border-radius: 10px;
-    height: 300px; /* Altura fija para igualar el iframe */
+  border-radius: 10px;
+  height: 300px; /* Altura fija para igualar el iframe */
 }
 
 .gallery-map iframe {
-    border-radius: 10px;
-    height: 89%;
-    width: 100%;
+  border-radius: 10px;
+  height: 89%;
+  width: 100%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Asegurar que el carrusel se ajuste al tamaño de las imágenes */
 .carousel-inner {
-    width: 100%;
-    max-height: 100%;
+  width: 100%;
+  max-height: 100%;
 }
 
 /* Asegurar que las imágenes del carrusel se ajusten correctamente */
 .carousel-inner img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
-
 
 /*<-------------------------
 CONTACTO
 ----------------------------> */
 
 .contact-section {
-    padding: 20px 0;
-    background-color: #f9f9f9;
-    margin: 10px;
+  padding: 20px 0;
+  background-color: #f9f9f9;
+  margin: 10px;
 }
 
 .contact-container {
-    display: flex;
-    align-items: stretch;
-    height: 100%;
+  display: flex;
+  align-items: stretch;
+  height: 100%;
 }
 
 .notebook {
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-.notebook h3{
-    text-align: center;
+.notebook h3 {
+  text-align: center;
 }
 
 .contact-form {
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-.contact-form h3{
-    text-align: center;
-    margin-bottom: 15px;
+.contact-form h3 {
+  text-align: center;
+  margin-bottom: 15px;
 }
-
 
 /*<-------------------------
 PREGUNTAS FRECUENTES
 ----------------------------> */
 
-
 /* Tu CSS existente */
 .faq-section {
-    padding: 80px 0;
-    background-color: #f9f9f9;
+  padding: 80px 0;
+  background-color: #f9f9f9;
 }
 
 .section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .faq-list {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .faq-item {
-    margin-bottom: 20px;
-    overflow: hidden;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .faq-toggle {
-    display: none;
+  display: none;
 }
 
 .question {
-    font-size: 90%;
-    cursor: pointer;
-    display: block;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  font-size: 90%;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .faq-toggle:checked + .question {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
-label img{
-    width: 5%;
-    height: auto;
-    float: right;
+label img {
+  width: 5%;
+  height: auto;
+  float: right;
 }
 
 .answer {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0px;
-    font-size: 1rem;
-    color: #555;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 0 0 5px 5px;
-    transition: max-height 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0px;
+  font-size: 1rem;
+  color: #555;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  transition: max-height 0.5s ease;
 }
 
-.answer p{
-    margin-left: 5px;
+.answer p {
+  margin-left: 5px;
 }
 
 .faq-toggle:checked + .question + .answer {
-    max-height: 1000px;
+  max-height: 1000px;
 }
 
 /*<-------------------------
@@ -421,36 +417,36 @@ FOOTER
 ----------------------------> */
 
 .footer {
-    background-color: #054d7a;
-    text-align: center;
+  background-color: #054d7a;
+  text-align: center;
 }
 
 .social-icons {
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 10px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .social-icon {
-    font-size: 24px;
-    color: #333;
-    transition: color 0.3s;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s;
 }
 
 .social-icon:hover {
-    color: #007bff;
+  color: #007bff;
 }
 
-h6{
-    text-align: end;
-    font-size: 14px;
-    background-color: #333;
-    color: #bbbbbb;
-    padding: 0;
-    margin: 0;
+h6 {
+  text-align: end;
+  font-size: 14px;
+  background-color: #333;
+  color: #bbbbbb;
+  padding: 0;
+  margin: 0;
 }
 
 /*<-------------------------
@@ -458,28 +454,28 @@ BOTON ARRIBA
 ----------------------------> */
 
 #scrollToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    background-color: gray;
-    height: 6%;
-    width: 3%;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: gray;
+  height: 6%;
+  width: 3%;
 }
 
 #scrollToTopBtn img:hover {
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
 }
 
 #scrollToTopBtn img {
-    width: 90%;
-    height: auto;
+  width: 90%;
+  height: auto;
 }
 
 /*<-------------------------
@@ -487,195 +483,187 @@ HTML-MEDICOS
 ----------------------------> */
 
 .doctor-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.doctor-card div h2{
-    text-align: center;
+.doctor-card div h2 {
+  text-align: center;
 }
 
 /* Estilo de imagen brillante */
 .doctor-card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-    border: 3px solid #f2f2f2;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid #f2f2f2;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 /* Estilo de imagen en hover */
 .doctor-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .doctor-card:hover img {
-    border-color: #36a0fc;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  border-color: #36a0fc;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilo para la información del médico */
 .doctor-card .info {
-    text-align: left;
-    flex: 1;
+  text-align: left;
+  flex: 1;
 }
 
 /* Estilo para los íconos de redes sociales en la versión vertical */
 .social-icons-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px;
 }
 
 /* Estilo para cada ícono de red social */
-.social-icon-a{
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
+.social-icon-a {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-.social-icon-a:hover{
-    border-radius: 10px;
+.social-icon-a:hover {
+  border-radius: 10px;
 }
-
 
 /*<-------------------------
 HTML-ESPECIALIDADES
 ----------------------------> */
 .specialty-description {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-#img-espe{
-    border-radius: 5px;
+#img-espe {
+  border-radius: 5px;
 }
 
 .specialty-description h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    text-decoration: underline;
-    font-family: 'Noto Serif', serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  font-family: "Noto Serif", serif;
 }
 
 .specialty-description p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    font-family: 'Noto Serif Display', serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-family: "Noto Serif Display", serif;
 }
-
-
 
 /*<-------------------------
 MEDIAS
 ----------------------------> */
 
 @media only screen and (max-width: 768px) {
-    header a img{
-        width: 35vw;
-    }
-    
-    .presentation-text{
-        padding: 10px;
-    }
+  header a img {
+    width: 35vw;
+  }
 
-    .presentation-text h2 {
-        font-size: 18px;
-    }
+  .presentation-text {
+    padding: 10px;
+  }
 
-    .presentation-text p {
-        font-size: 12px;
-    }
+  .presentation-text h2 {
+    font-size: 18px;
+  }
 
-    .presentation-text a.btn {
-        font-size: 12px;
-        padding: 12px 20px;
-    }
+  .presentation-text p {
+    font-size: 12px;
+  }
 
-    .social-icons-container {
-        position: static;
-        flex-direction: row;
-        align-items: center;
-    }
+  .presentation-text a.btn {
+    font-size: 12px;
+    padding: 12px 20px;
+  }
 
-    .doctor-card {
-        flex-direction: column; /* Cambia a una disposición vertical */
-        text-align: center;
-    }
+  .social-icons-container {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+  }
 
-    .doctor-card img {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+  .doctor-card {
+    flex-direction: column; /* Cambia a una disposición vertical */
+    text-align: center;
+  }
 
-    .social-icons-container {
-        flex-direction: row; /* Cambia a una disposición horizontal */
-        padding: 0;
-        border: none;
-    }
+  .doctor-card img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 
-    .social-icon {
-        margin-right: 10px;
-    }
+  .social-icons-container {
+    flex-direction: row; /* Cambia a una disposición horizontal */
+    padding: 0;
+    border: none;
+  }
+
+  .social-icon {
+    margin-right: 10px;
+  }
 }
 
 @media only screen and (max-width: 455px) {
-    header a img{
-        width: 45vw;
-    }
+  header a img {
+    width: 45vw;
+  }
 
-    .presentation-text h2 {
-        font-size: 16px; 
-    }
+  .presentation-text h2 {
+    font-size: 16px;
+  }
 
-    .presentation-text p {
-        font-size: 10px;
-    }
+  .presentation-text p {
+    font-size: 10px;
+  }
 
-    .presentation-text a.btn {
-        font-size: 10px;
-        padding: 10px 20px;
-    }
-
+  .presentation-text a.btn {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
 }
 
 @media only screen and (max-width: 380px) {
-    .presentation-text h2 {
-        font-size: 14px; 
-    }
+  .presentation-text h2 {
+    font-size: 14px;
+  }
 
-    .presentation-text p {
-        font-size: 8px;
-    }
+  .presentation-text p {
+    font-size: 8px;
+  }
 
-    .presentation-text a.btn {
-        font-size: 8px;
-        padding: 8px 16px;
-    }
+  .presentation-text a.btn {
+    font-size: 8px;
+    padding: 8px 16px;
+  }
 
-    .question{
-        font-size: 0.7rem;
-    }
-
+  .question {
+    font-size: 0.7rem;
+  }
 }
-
-
-

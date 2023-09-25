@@ -221,6 +221,7 @@ SERVICIOS
   height: auto;
   margin-bottom: 10px;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .subgroup h3 {
@@ -305,40 +306,77 @@ CONTACTO
 .contact-section {
   padding: 20px 0;
   background-color: #f9f9f9;
-  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .contact-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container h3 {
+  text-align: center;
+}
+
+#cuadraditos {
   display: flex;
-  align-items: stretch;
-  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  padding: 20px;
 }
 
-.notebook {
-  background-color: #ffffff;
+.appointment {
+  text-align: center;
   padding: 20px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
   border-radius: 10px;
-  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.titles {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.btm {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btm:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la lista de datos de contacto */
+.contact-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-container ul li {
   margin-bottom: 10px;
 }
 
-.notebook h3 {
-  text-align: center;
-}
-
-.contact-form {
-  background-color: #ffffff;
-  padding: 20px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.contact-form h3 {
-  text-align: center;
-  margin-bottom: 15px;
+.contact-container ul li span {
+  font-weight: bold;
 }
 
 /*<-------------------------

@@ -8,6 +8,11 @@ GENERAL
   box-sizing: border-box;
 }
 
+/* Estilos para el desplazamiento suave */
+html {
+  scroll-behavior: smooth;
+}
+
 /*<-------------------------
 HEADER
  ----------------------------> */
@@ -365,7 +370,6 @@ CONTACTO
   background-color: #0056b3;
 }
 
-/* Estilos para la lista de datos de contacto */
 .contact-container ul {
   list-style: none;
   padding: 0;
@@ -378,76 +382,6 @@ CONTACTO
 .contact-container ul li span {
   font-weight: bold;
 }
-
-/*<-------------------------
-PREGUNTAS FRECUENTES
-----------------------------> */
-
-/* .faq-section {
-  padding: 80px 0;
-  background-color: #f9f9f9;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.faq-list {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.faq-item {
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-
-.faq-toggle {
-  display: none;
-}
-
-.question {
-  font-size: 90%;
-  cursor: pointer;
-  display: block;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.faq-toggle:checked + .question {
-  background-color: #f0f0f0;
-}
-
-label img {
-  width: 5%;
-  height: auto;
-  float: right;
-}
-
-.answer {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0px;
-  font-size: 1rem;
-  color: #555;
-  border: 1px solid #ccc;
-  border-top: none;
-  border-radius: 0 0 5px 5px;
-  transition: max-height 0.5s ease;
-}
-
-.answer p {
-  margin-left: 5px;
-}
-
-.faq-toggle:checked + .question + .answer {
-  max-height: 1000px;
-} */
 
 /*<-------------------------
 FOOTER
@@ -471,10 +405,15 @@ FOOTER
   font-size: 24px;
   color: #333;
   transition: color 0.3s;
+  font-weight: bold;
 }
 
 .social-icon:hover {
   color: #007bff;
+}
+
+footer p {
+  font-weight: bold;
 }
 
 h6 {

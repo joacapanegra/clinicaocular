@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -53,9 +54,9 @@
 
 <!-- Contenido del resto de la página aquí -->
 
-<div class="container-fluid p-0 position-relative" id="bienve">
+<div class="container-fluid p-0 position-relative" id="bienve" >
     <img src="./img/chico.jpg" alt="">
-    <div class="presentation-text position-absolute top-50 start-50 translate-middle text-center bg-dark text-light p-4 rounded shadow">
+    <div class="presentation-text position-absolute top-50 start-50 translate-middle text-center bg-dark text-light p-4 rounded shadow" data-aos="fade-down-right">
         <h2>Bienvenidos al Centro Oftalmologico Dres. Molinas</h2>
         <p>Somos un equipo dedicado a cuidar de tu salud visual. Nuestros médicos altamente calificados y servicios de vanguardia están aquí para atenderte.</p>
         <a href="#servicios" class="btn btn-primary" id="whatsapp-link">
@@ -69,8 +70,8 @@
     <h2>Nuestro Staff</h2>
 </div>
 
-<main>
-    <div class="card slide-in" data-aos="fade-right">
+<main data-aos="fade-right">
+    <div class="card slide-in">
         <div class="card-body d-flex align-items-center searchable">
             <div class="col-md-6 order-md-1">
                 <img src="./img/doctor.png" alt="Foto de la persona" class="img-fluid">
@@ -86,7 +87,7 @@
         </div>
     </div>
 
-    <div class="card slide-in" data-aos="fade-right">
+    <div class="card slide-in">
         <div class="card-body d-flex align-items-center">
             <div class="col-md-6 order-md-1">
                 <img src="./img/doctor.png" alt="Foto de la persona" class="img-fluid">
@@ -97,7 +98,6 @@
                 </p>
                 <p class="card-text">Completó su residencia en el Hospital Rivadavia de la Ciudad de Buenos Aires, y posteriormente, profundizó sus conocimientos al especializarse en Retina y Vitreo bajo la tutela del destacado Dr. Pablo Cazon, enriqueciendo así su trayectoria profesional en el campo de la oftalmología.
                 </p>
-                <!-- <a href="./otros-html/doctores.html" class="btn btn-primary mt-3">Conoce más</a> -->
             </div>
         </div>
     </div>
@@ -107,19 +107,19 @@
     <h2>Especialidades</h2>
 </div>
 <section class="subgroups searchable">
-    <div class="subgroup">
+    <div class="subgroup" data-aos="fade-right">
         <img src="./especiladades img/EXIMER LASER 2.jpg" alt="Subgrupo 1">
         <h3>Cirugía refractiva:</h3>
         <p>Son un conjunto de procedimientos que utilizamos para corregir los defectos refractivos de los pacientes...</p>
         <a href="./otros-html/refractiva.html" class="btn btn-info mas-info">Más Info</a>
     </div>
-    <div class="subgroup">
+    <div class="subgroup" data-aos="fade-left">
         <img src="./especiladades img/CATARATAS 2.jpg" alt="Subgrupo 2">
         <h3>Cirugía de cataratas:</h3>
         <p>La catarata es la mayor causa de ceguera reversible a nivel mundial, y se puede corregir mediante cirugía. La misma consiste...</p>
         <a href="./otros-html/cataratas.html" class="btn btn-info mas-info">Más Info</a>
     </div>
-    <div class="subgroup">
+    <div class="subgroup" data-aos="fade-right">
         <img src="./especiladades img/tomografía 1.jpg" alt="Subgrupo 3">
         <h3>Retina y vítreo:</h3>
         <p>La retina, es un receptor neurosensorial que capta y procesa la LUZ para ser
@@ -127,7 +127,7 @@
             ...</p>
         <a href="./otros-html/cornea.html" class="btn btn-info mas-info">Más Info</a>
     </div>
-    <div class="subgroup">
+    <div class="subgroup" data-aos="fade-left">
         <img src="./especiladades img/CATARATAS.jpg" alt="Subgrupo 4">
         <h3>Córnea:</h3>
         <p>Es la capa transparente que se encuentra en la zona delantera del ojo, y funciona como el primer lente de nuestro sistema visual...</p>
@@ -144,7 +144,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h2>Carrusel de Fotos del Centro</h2>
-                <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-in">
                     <div class="carousel-inner"> Tu dispositivo no soporta el carrusel 
                         <div class="carousel-item active">
                             <img src="img/clinica (1).jpg" alt="Imagen 1">
@@ -166,7 +166,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="flip-right">
                 <h2>Google Maps</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13587.382750085053!2d-60.7160596!3d-31.6380752!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9d70aafeee7%3A0xc0d4760c8c6071b5!2sCentro%20Oftalmologico%20Dres.%20Molinas!5e0!3m2!1ses-419!2sar!4v1692194724433!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -184,7 +184,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="contact-container">
-                    <div class="notebook">
+                    <div class="notebook" data-aos="zoom-out">
                         <h3>Datos del Centro</h3>
                         <ul>
                             <hr>
@@ -205,11 +205,14 @@
             </div>
             <div class="col-md-6">
                 <div id="cuadraditos">
-                    <div class="appointment">
+                    <div class="appointment" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                         <h2 class="titles">¡Pulsa aquí para sacar tu turno!</h2>
                         <button class="btm">Sacar Turno</button>
                     </div>
-                    <div class="appointment">
+                    <div class="appointment" data-aos="fade-up"
+                    data-aos-duration="3000">
                         <h2 class="titles">¡Pulsa aquí para sacar tu turno!</h2>
                         <button class="btm">Sacar Turno</button>
                     </div>
@@ -221,54 +224,6 @@
 </section>
 
 
-<!-- <div class="specialties-header" id="contactos">
-    <h2>Preguntas Frecuentes</h2>
-</div>
-
-<section class="faq-section" id="pr">
-    <div class="container">
-        <div class="faq-list">
-            <div class="faq-item">
-                <input type="checkbox" class="faq-toggle" id="faq1">
-                <label class="question" for="faq1">¿Cuáles son los horarios de atención?
-                    <img src="./img/arrows-147753_1920.png" alt="">
-                </label>
-                <div class="answer">
-                    <p>Nuestra clínica está abierta de lunes a viernes de 9:00 AM a 6:00 PM y los sábados de 10:00 AM a 2:00 PM.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <input type="checkbox" class="faq-toggle" id="faq2">
-                <label class="question" for="faq2">¿Cómo puedo agendar una cita?
-                    <img src="./img/arrows-147753_1920.png" alt="">
-                </label>
-                <div class="answer">
-                    <p>Puedes agendar una cita en línea desde nuestra página de "Agendar Cita" o llamando a nuestro número de atención al cliente.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <input type="checkbox" class="faq-toggle" id="faq3">
-                <label class="question" for="faq3">¿Cómo puedo agendar una cita?
-                    <img src="./img/arrows-147753_1920.png" alt="">
-                </label>
-                <div class="answer">
-                    <p>Puedes agendar una cita en línea desde nuestra página de "Agendar Cita" o llamando a nuestro número de atención al cliente.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <input type="checkbox" class="faq-toggle" id="faq4">
-                <label class="question" for="faq4">¿Cómo puedo agendar una cita?
-                    <img src="./img/arrows-147753_1920.png" alt="">
-                </label>
-                <div class="answer">
-                    <p>Puedes agendar una cita en línea desde nuestra página de "Agendar Cita" o llamando a nuestro número de atención al cliente.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
-
 <footer class="footer">
     <div class="social-icons">
         <a href="https://www.instagram.com/oftalmologia.molinas/" class="social-icon">
@@ -276,7 +231,9 @@
         </a>
     </div>
     <div>
-    <p>Copyright © 2023 Centro Oftalmologico Dres. Molinas. Todos los derechos reservados.</p>    <h6>Desarrollo y diseño web: Joaquín Capanegra.</h6>
+    <p>Copyright © 2023 Centro Oftalmologico Dres. Molinas. Todos los derechos reservados.</p>    <h6 data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">Desarrollo y diseño web: Joaquín Capanegra.</h6>
 </div>
 </footer>
 
@@ -285,6 +242,12 @@
 </button></a>
 
 <script src="./ayudas.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
 
 </body>
 </html>

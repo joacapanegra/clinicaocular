@@ -72,13 +72,13 @@ header a img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 20px;
   border-radius: 10px;
   color: #fff;
   text-align: center;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-  max-width: 70%; /* Ajusta el ancho máximo según tu preferencia */
+  max-width: 70%;
 }
 
 /* Estilos para el texto dentro del cuadrado */
@@ -147,9 +147,13 @@ header a img {
 MEDICOS
 ----------------------------> */
 
+.card-body {
+  display: flex;
+}
+
 .card-body div img {
   width: 100%;
-  max-width: 300px; /* Ajusta el tamaño de la imagen */
+  max-width: 400px; /* Ajusta el tamaño de la imagen */
   border-radius: 10px;
 }
 
@@ -455,77 +459,6 @@ BOTON ARRIBA
 }
 
 /*<-------------------------
-HTML-MEDICOS
-----------------------------> */
-
-.doctor-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.doctor-card div h2 {
-  text-align: center;
-}
-
-/* Estilo de imagen brillante */
-.doctor-card img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-right: 20px;
-  border: 3px solid #f2f2f2;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-}
-
-/* Estilo de imagen en hover */
-.doctor-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.doctor-card:hover img {
-  border-color: #36a0fc;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilo para la información del médico */
-.doctor-card .info {
-  text-align: left;
-  flex: 1;
-}
-
-/* Estilo para los íconos de redes sociales en la versión vertical */
-.social-icons-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  padding: 10px;
-}
-
-/* Estilo para cada ícono de red social */
-.social-icon-a {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.social-icon-a:hover {
-  border-radius: 10px;
-}
-
-/*<-------------------------
 HTML-ESPECIALIDADES
 ----------------------------> */
 .specialty-description {
@@ -585,6 +518,10 @@ MEDIAS
     align-items: center;
   }
 
+  .card-body {
+    display: block;
+  }
+
   .doctor-card {
     flex-direction: column; /* Cambia a una disposición vertical */
     text-align: center;
@@ -603,6 +540,21 @@ MEDIAS
 
   .social-icon {
     margin-right: 10px;
+  }
+
+  .subgroups {
+    display: block;
+  }
+
+  .subgroup {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .subgroup img {
+    width: 100%;
+    height: auto;
   }
 }
 

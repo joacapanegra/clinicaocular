@@ -75,7 +75,7 @@ header a img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 10px;
   color: #fff;
@@ -172,9 +172,8 @@ MEDICOS
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
-  margin-bottom: 5px;
 }
 
 .card-description {
@@ -284,6 +283,9 @@ UBICACION
   font-size: 2rem;
   margin-bottom: 30px;
   margin-top: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .gallery-map .carousel-inner {
@@ -371,6 +373,13 @@ CONTACTO
   margin-bottom: 20px;
 }
 
+.notebook h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
 .btm {
   background-color: #007bff;
   color: #fff;
@@ -379,10 +388,6 @@ CONTACTO
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.btm:hover {
-  background-color: #0056b3;
 }
 
 .contact-container ul {
@@ -396,6 +401,12 @@ CONTACTO
 
 .contact-container ul li span {
   font-weight: bold;
+}
+
+.appointment button:hover {
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #0056b3;
 }
 
 /*<-------------------------
@@ -605,4 +616,70 @@ MEDIAS
   .question {
     font-size: 0.7rem;
   }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+main h1 {
+  font-size: 45px;
+  margin: 30px;
+  color: #000000;
+  text-align: center;
+  text-decoration: underline wavy;
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.text-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.text-content p {
+  font-size: 18px;
+  color: #666;
+}
+
+.image-content {
+  flex: 1;
+  text-align: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos para cada sección */
+#introduccion {
+  background-color: #f9f9f9;
+}
+
+#detalles {
+  background-color: #f0f0f0;
+}
+
+#aplicaciones {
+  background-color: #e9e9e9;
 }

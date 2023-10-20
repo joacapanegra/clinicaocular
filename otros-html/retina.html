@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../img/eye-38039_1920.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../style.css">
     <script src="../ayudas.js"></script>
@@ -17,79 +18,66 @@
     <title>Retina Ocular</title>
 </head>
 <body>
+
     <header class="navbar navbar-expand-lg navbar-light" id="arriba">
         <div class="container">
-            <!-- Logo de la clínica -->
-            <a class="navbar-brand" href="../index.html">
+            <div id="volver">
+                <a href="../index.html">
+                    <i class="fa-solid fa-left-long"></i>
+                    <h2>Volver</h2>
+                </a>
+            </div>
+            <a class="navbar-brand" href="">
                 <img src="../img/logo.jpg" alt="Logo de la Clínica">
             </a>
-    
-            <!-- Botón para menú responsive en dispositivos móviles -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <!-- Menú de navegación -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#especialidad">Especialidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ubicacion">Ubicacion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactos">Contactos</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </header>
 
-    <main>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="../img/oftalmologia.jpg" alt="Optometría" class="img-fluid" id="img-espe">
+    <main id="main">
+        <section id="especialidades" class="especialidades">
+            <div class="container">
+                <h1 class="especialidad-titulo">CORNEA</h1>
+                <div id="cataratas" class="especialidad">
+                    <h2>Sobre la Cornea</h2>
+                    <p>Es la capa transparente que se encuentra en la zona delantera del ojo, y funciona como el primer lente de nuestro sistema visual, el cual es fundamental para tener una buena visión.
+                    Son numerosas las patologías que pueden aparecer en esta estructura, entre las más frecuentes se encuentran:
+                        </p>
                 </div>
-                <div class="col-md-6">
-                    <div class="specialty-description">
-                        <h2>Oftalmología</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore laboriosam illum iusto quam perspiciatis cumque, accusamus ea, minima accusantium voluptate dolores atque officiis! Commodi autem non nobis? Blanditiis autem voluptatem porro nesciunt nisi quidem officiis deleniti aliquid labore vel iusto soluta, ex, obcaecati in laboriosam, culpa iste excepturi! Fugiat aperiam voluptatem accusantium, minus suscipit nihil hic ducimus distinctio quam quia eligendi nam veritatis sequi beatae pariatur ex assumenda tempora temporibus aspernatur in dolor, sint tenetur? Quibusdam culpa distinctio quae totam illum. Quibusdam cupiditate magnam ut, expedita maiores explicabo sint sunt delectus veritatis accusamus deleniti placeat impedit quasi dicta! Exercitationem, deserunt.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident omnis quo sit illo distinctio officiis quos quam deleniti aperiam corrupti rem eos iste veniam adipisci doloremque, blanditiis asperiores totam consectetur expedita eum optio. In, hic excepturi autem rem quidem, inventore velit sapiente doloremque a voluptate odit eaque quia odio quaerat.</p>
+                <div id="tratamiento" class="especialidad">
+                    <h2>Queratocono</h2>
+                    <p>En un enfermedad que se caracteriza por un debilitamiento y adelgazamiento de la córnea, la cual comienza a protruir hacia adelante en forma de cono. Es fundamental su diagnóstico y tratamiento temprano para evitar la progresión de la enfermedad. Para ello realizamos el crosslinking, el cual es un procedimiento con luz ultravioleta que nos ayuda a fortalecer la córnea y ralentizar o frenar la progresión de la enfermedad. En sus estadios más avanzados requiere de la realización de trasplante de córnea.</p>
+                    <div id="img-espe">
+                        <img src="../especiladades img/CORNEA.jpg" alt="Imagen 3">
+                    </div>
+                </div>
+                <div id="tratamiento" class="especialidad">
+                    <h2>Queratocono</h2>
+                    <p>Es una enfermedad frecuento que se caracteriza por el crecimiento de una carnosidad que crece hacia lo cornea. La misma se produce pro el estrés coránico al que esta sometido la superficie del ojo (sol, viento, sequedad).Esta enfermedad se trata con cirugía para la remoción de la lesión e intentar frenar su nueva aparición.
+                    </p>
+                    <div id="img-espe">
+                        <img src="../especiladades img/cornea 2 (1).jpg" alt="Imagen 3">
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
 
     <footer class="footer">
         <div class="social-icons">
-            <a href="#" class="social-icon">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="social-icon">
+            <a href="https://www.instagram.com/oftalmologia.molinas/" class="social-icon"
+            target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
         <div>
-        <p>Copyright © 2023 Centro Oftalmologico Dres. Molinas. Todos los derechos reservados.</p>    
-        <h6>Desarrollo y diseño web: Joaquín Capanegra.</h6>
-</div>
+        <p>Copyright © 2023 Centro Oftalmologico Dres. Molinas. Todos los derechos reservados.</p><h6 >Desarrollo y diseño web: Joaquín Capanegra.</h6>
+    </div>
     </footer>
-    
-    
     
     <button id="scrollToTopBtn" title="Volver arriba">
         <a href="#arriba"><img src="../img/arrow-25859_1920.png" alt="Flecha arriba">
     </button></a>
+
 </body>
 </html>

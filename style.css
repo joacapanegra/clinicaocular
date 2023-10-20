@@ -16,6 +16,7 @@ html {
 body {
   overflow-x: hidden;
 }
+
 /*<-------------------------
 HEADER
  ----------------------------> */
@@ -272,11 +273,10 @@ SERVICIOS
 UBICACION
 ----------------------------> */
 
-/* Estilo para la sección Carrusel y Google Maps */
 .gallery-map {
   padding: 80px 0;
   background-color: #f9f9f9;
-  text-align: center; /* Centrar el contenido horizontalmente */
+  text-align: center;
 }
 
 .gallery-map h2 {
@@ -502,7 +502,8 @@ HTML-ESPECIALIDADES
 }
 
 #volver h2 {
-  font-family: fantasy;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 32px;
   color: #000000;
   padding-top: 5px;
@@ -705,7 +706,6 @@ main h1 {
   margin: 30px;
   color: #000000;
   text-align: center;
-  text-decoration: underline wavy;
 }
 
 .text-content {

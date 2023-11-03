@@ -537,6 +537,10 @@ HTML-ESPECIALIDADES
   max-width: 900px;
 }
 
+.especialidad-titulo {
+  font-weight: bold;
+}
+
 #cataratas,
 #tratamiento {
   max-width: 900px;
@@ -708,5 +712,10 @@ MEDIAS
 
   .especialidad-titulo {
     font-size: 25px;
+  }
+
+  #cataratas h2,
+  #tratamiento h2 {
+    font-size: 20px;
   }
 }
